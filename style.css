@@ -101,6 +101,7 @@ aside {
   display: flex;
   gap: 1rem;
   margin-left: 0.5rem;
+  margin: 1rem 0.5rem;
   font-size: 1.5rem;
 }
 
@@ -122,9 +123,7 @@ li {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 1rem 2rem;
-  gap: 1rem;
+  grid-template-columns: 3fr 2fr;
 }
 
 h4 {
@@ -133,15 +132,24 @@ h4 {
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem 1rem;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  width: 700px;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd6fe;
+  border-bottom: 1px solid #ddd6fe;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .project {
   border-left: solid 8px #6d28d9;
   border-radius: 0.8rem;
-  width: 350px;
+  width: 300px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,7 +168,8 @@ h4 {
 .announcements-and-trending {
   display: flex;
   flex-direction: column;
-  gap: 12rem;
+  gap: 8rem;
+  margin-left: 1rem;
 }
 
 .announcement h6:hover {
@@ -186,6 +195,11 @@ h4 {
 }
 
 /* Trending */
+
+.trending {
+  margin-bottom: 4rem;
+  margin-left: 0.5rem;
+}
 
 .trend {
   display: flex;
