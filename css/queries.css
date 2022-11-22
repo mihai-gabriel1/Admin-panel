@@ -1,0 +1,99 @@
+/* Media Queries */
+
+@media (max-width: 89em) {
+  .projects {
+    width: 600px;
+  }
+}
+
+@media (max-width: 81em) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .announcements-and-trending {
+    margin-left: 9.5rem;
+    margin-top: 2rem;
+  }
+
+  .trending {
+    margin-top: -4rem;
+  }
+
+  .wrapper-links {
+    gap: 1rem;
+  }
+
+  @media (max-width: 63em) {
+    aside {
+      width: 14rem;
+    }
+
+    header {
+      padding: 0;
+    }
+
+    .welcome-container {
+      font-size: 1.2rem;
+    }
+
+    .btns-header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper-links {
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 58em) {
+    header {
+      margin-right: 5rem;
+    }
+
+    .profile-container {
+      gap: 0.5rem;
+    }
+
+    .wrapper-links {
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 54em) {
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header,
+    .projects {
+      width: 300px;
+    }
+
+    .announcements {
+      width: 300px;
+      align-items: flex-start;
+    }
+
+    .wrapper-links {
+      gap: 1rem;
+    }
+  }
+}

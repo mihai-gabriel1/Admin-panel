@@ -24,6 +24,10 @@ header {
   padding: 0.5rem 2rem;
 }
 
+.welcome-container {
+  font-size: 1.8rem;
+}
+
 .search-container {
   display: flex;
   align-items: center;
@@ -94,7 +98,7 @@ aside {
 .wrapper-links {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 3rem;
 }
 
 .logo {
@@ -123,7 +127,7 @@ li {
 
 main {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 1.5fr;
 }
 
 h4 {
@@ -177,6 +181,7 @@ h4 {
 }
 .announcement {
   padding: 0.5rem;
+  width: 400px;
 }
 
 .announcement {
