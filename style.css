@@ -10,7 +10,7 @@ body {
   grid-template-rows: 1fr 4fr;
   gap: 1rem;
   background-color: #fff;
-  font-family: "Courier New", Courier, monospace, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* Header  */
@@ -21,7 +21,6 @@ header {
   grid-row: 1 / 2;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  /*  */
   padding: 0.5rem 2rem;
 }
 
@@ -32,7 +31,7 @@ header {
 }
 
 input {
-  background-color: grey;
+  background-color: #ddd6fe;
   width: 20rem;
   height: 2rem;
   padding: 0.5rem;
@@ -47,18 +46,25 @@ input {
 }
 
 .profile-container {
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 .user-avatar-big {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.user-avatar-big:hover,
+.user-avatar-small:hover,
+svg:hover {
+  cursor: pointer;
 }
 
 .user-avatar-small {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
@@ -82,8 +88,6 @@ aside {
   display: grid;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  grid-template-rows: auto auto 1fr;
-  text-align: center;
   gap: 1rem;
 }
 
@@ -123,7 +127,6 @@ h4 {
 }
 
 .projects {
-  /* height: auto; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -152,7 +155,34 @@ h4 {
 .announcements-and-trending {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 12rem;
+}
+
+.announcement h6:hover {
+  cursor: pointer;
+}
+.announcement {
+  padding: 0.5rem;
+}
+
+.announcement {
+  border-left: 1px solid #ddd6fe;
+  border-right: 1px solid #ddd6fe;
+}
+
+.share-day,
+.privacy {
+  border-top: solid 1px #ddd6fe;
+}
+
+.announ-h4,
+.trending-h4 {
+  margin-bottom: 1rem;
 }
 
 /* Trending */
+
+.trend {
+  display: flex;
+  gap: 1rem;
+}
