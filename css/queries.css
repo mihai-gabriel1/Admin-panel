@@ -104,11 +104,6 @@
     header {
       margin-top: 0.5rem;
     }
-
-    main,
-    header {
-      margin-left: -2.2rem;
-    }
   }
 }
 
@@ -151,5 +146,16 @@
 
   .announcement {
     width: 13rem;
+  }
+
+  aside {
+    width: 10rem;
+    /* height: 100vh; */
+  }
+
+  body {
+    height: 100vh;
+    grid-template-columns: 10.7rem 1fr;
+    grid-template-rows: 1fr 2fr;
   }
 }
