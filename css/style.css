@@ -36,6 +36,8 @@ header {
 
 input {
   background-color: #ddd6fe;
+  color: #6d28d9;
+  font-size: 1.3rem;
   width: 20rem;
   height: 2rem;
   padding: 0.5rem;
@@ -147,6 +149,7 @@ h4 {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin-left: -1.2rem;
 }
 
 .project {

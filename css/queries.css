@@ -6,9 +6,10 @@
   }
 }
 
-@media (max-width: 81em) {
+@media (max-width: 80em) {
   main {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 350px 1fr;
   }
 
   main {
@@ -95,5 +96,60 @@
     .wrapper-links {
       gap: 1rem;
     }
+
+    .announcements-and-trending {
+      margin-left: 0px;
+    }
+
+    header {
+      margin-top: 0.5rem;
+    }
+
+    main,
+    header {
+      margin-left: -2.2rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    width: 200px;
+  }
+
+  input {
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .welcome-container {
+    gap: 0.4rem;
+  }
+
+  .user-avatar-small {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-avatar-big {
+    width: 60px;
+    height: 50px;
+  }
+
+  .projects {
+    width: 250px;
+  }
+
+  .project {
+    width: 15rem;
+  }
+
+  .announcements-and-trending {
+    gap: 6rem;
+  }
+
+  .announcement {
+    width: 13rem;
   }
 }
