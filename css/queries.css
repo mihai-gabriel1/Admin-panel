@@ -61,10 +61,6 @@
   }
 
   @media (max-width: 58em) {
-    header {
-      margin-right: 5rem;
-    }
-
     .profile-container {
       gap: 0.5rem;
     }
@@ -81,11 +77,6 @@
       gap: 1rem;
       justify-content: center;
       align-items: center;
-    }
-
-    header,
-    .projects {
-      width: 300px;
     }
 
     .announcements {
@@ -110,7 +101,7 @@
 @media (max-width: 500px) {
   header {
     display: flex;
-    width: 200px;
+    /* width: 200px; */
   }
 
   input {
@@ -133,11 +124,7 @@
   }
 
   .projects {
-    width: 250px;
-  }
-
-  .project {
-    width: 15rem;
+    width: 300px;
   }
 
   .announcements-and-trending {
@@ -145,17 +132,41 @@
   }
 
   .announcement {
-    width: 13rem;
+    width: 20rem;
   }
 
   aside {
     width: 10rem;
-    /* height: 100vh; */
   }
 
   body {
     height: 100vh;
-    grid-template-columns: 10.7rem 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .menu-wrapper {
+    display: block;
+  }
+
+  header {
+    grid-column: 1 / 2;
+    margin-top: 0.9rem;
+  }
+
+  main {
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .menu-wrapper {
+    display: block;
   }
 }
