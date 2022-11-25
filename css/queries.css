@@ -4,18 +4,20 @@
   .projects {
     width: 600px;
   }
+
+  aside {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 1282px) {
 }
 
 @media (max-width: 80em) {
   main {
     display: grid;
-    grid-template-columns: 350px 1fr;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
   }
 
   .announcements-and-trending {
@@ -29,6 +31,13 @@
 
   .wrapper-links {
     gap: 1rem;
+  }
+
+  @media (max-width: 77.5em) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 63em) {
@@ -98,7 +107,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 810px) {
   header {
     display: flex;
     /* width: 200px; */
